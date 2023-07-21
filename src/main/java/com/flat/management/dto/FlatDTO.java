@@ -6,17 +6,18 @@ import java.time.ZonedDateTime;
 public class FlatDTO {
     private String flatId;
     private String buildingId;
-    private String flatNo;
+    private int flatNo;
 
-    public String getFlatNo() {
-        return flatNo;
-    }
-
-    public void setFlatNo(String flatNo) {
+    public void setFlatNo(int flatNo) {
         this.flatNo = flatNo;
     }
 
     private String flatType;
+
+    public int getFlatNo() {
+        return flatNo;
+    }
+
     private ZonedDateTime createdAt;
 
 

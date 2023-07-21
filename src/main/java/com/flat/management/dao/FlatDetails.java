@@ -18,14 +18,15 @@ public class FlatDetails {
     private String flatId;
     private String buildingId;
     private String flatType;
-    private String flatNo;
+    private int flatNo;
     private ZonedDateTime createdAt;
 
-    public String getFlatNo() {
+
+    public int getFlatNo() {
         return flatNo;
     }
 
-    public void setFlatNo(String flatNo) {
+    public void setFlatNo(int flatNo) {
         this.flatNo = flatNo;
     }
 

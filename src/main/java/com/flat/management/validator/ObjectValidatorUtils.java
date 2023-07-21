@@ -43,7 +43,7 @@ public class ObjectValidatorUtils {
     public static Boolean addFlatValidator(FlatDTO flatDTO){
         Assert.notNull(flatDTO.getBuildingId(),"Please give buildingId");
         Assert.notNull(flatDTO.getFlatType(),"Please enter Flat Type");
-        Assert.notNull(flatDTO.getFlatNo(),"Please enter flat number");
+        Assert.isTrue(flatDTO.getFlatNo()!= 0,"Please enter flat number/flat number should be >0");
         return true;
     }
 
