@@ -2,6 +2,7 @@ package com.flat.management.dao;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
+import net.bytebuddy.utility.dispatcher.JavaDispatcher;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -24,7 +24,6 @@ public class AppConfiguration {
 
     @Bean
     public FilterRegistrationBean<JwtAuthFilter> registerJwtAuthFilter(){
-        System.out.println("created-->>>>>>>>>>>>>>>>");
         FilterRegistrationBean<JwtAuthFilter> registrationBean  = new FilterRegistrationBean<>();
         registrationBean.setFilter(new JwtAuthFilter(securityTokenManager));
         registrationBean.addUrlPatterns("/*");
